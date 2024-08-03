@@ -1,5 +1,5 @@
 # Docker Tutorial
-<img src="Docker-Logo_Horizontel_279x131.b8a5c41e56b77706656d61080f6a0217a3ba356d.png" height="240px" width="300px" />  
+![image](https://github.com/user-attachments/assets/5c69fcca-03ea-427e-b6ee-a488ea072782)
 
 **記錄我在Udemy上所學，  
 由講師Bret Fisher所教授Docker Mastery: with Kubernetes +Swarm**
