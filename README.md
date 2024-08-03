@@ -20,8 +20,15 @@ Docker 是一種開源軟體平台，它的構想理念是「Build and Ship any 
 1. [Docker Desktop](https://www.docker.com/products/docker-desktop/)  
    選擇Download for Windows
 2. [WSL2](https://learn.microsoft.com/zh-tw/windows/wsl/install)  
-   詳見連結如何安裝
+   詳見連結如何安裝  
 
+一切都安裝完成後打開你的CMD(建議將Powershell預設改Linux)，方便之後操作使用。  
+輸入docker version測試是否成功安裝:  
+```
+docker version
+```  
+出現以下資訊代表成功
+![alt text](image.png)
 ## 建立/使用Containers  
 
 ## Container Images，如何查看以及建立  
