@@ -1,5 +1,5 @@
 # Docker Tutorial
-![image](https://github.com/user-attachments/assets/5c69fcca-03ea-427e-b6ee-a488ea072782)
+![image](img\Docker-Logo_Horizontel_279x131.b8a5c41e56b77706656d61080f6a0217a3ba356d.png)
 
 **記錄我在Udemy上所學，  
 由講師Bret Fisher所教授Docker Mastery: with Kubernetes +Swarm**
@@ -21,7 +21,7 @@ Docker 是一種開源軟體平台，它的構想理念是「Build and Ship any 
 
 ##  Try it!! 
 如果覺得直接安裝有點不知所措Docker是在幹嘛的話，歡迎先試玩看看  
-[Play with Docker](https://labs.play-with-docker.com/)  
+[Play with Docker](img\image-1.png)  
 這是一個線上平台，允許用戶在網頁瀏覽器中運行 Docker 容器。  
 它提供了一個沙盒環境，用戶可以在這裡實驗 Docker 命令、部署容器，並學習 Docker，而不需要在本地安裝任何軟件。你會獲得一個臨時的免費環境，能夠實時練習和學習 Docker。這個平台對於開發者、DevOps 工程師和學生來說特別有用，讓他們可以探索 Docker 的各種功能。  
 ![alt text](image-2.png)  
