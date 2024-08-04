@@ -98,6 +98,10 @@ detach可以告訴Docker在後台運行它
   list running containers.  
 - **docker top (container name)**  
   list running processes in specific container.  
+- **docker container inspect**  
+  details of one container config (startup config, volumes, networking, etc).  
+- **docker container stats**  
+  performance stats for all containers.  
 - **docker container stop (container ID)**  
   stops the container process but doesn't remove it.  
 
@@ -124,6 +128,28 @@ docker container run & docker container start的差別
 7. Starts container by using the CMD in the image Dockerfile  
 
 ### Assignment: Manage Multiple Containers  
+- **Goal : Run a nginx, a mysql, and a httpd(apache) server**  
+  **(hint: When running mysql, use the --env option(or -e) to pass in MYSQL_RANDOM_ROOT_PASSWORD=yes)**   
+  
+
+**Answer :**  
+**1.Run mysql**    
+   ```
+   docker container run -d -p 3307:3306 --name db -e MYSQL_RANDOM_ROOT_PASSWORD=yes mysql
+   ```
+**2.Run httpd**  
+   ```
+   docker container run -d --name webserver -p 8080:80 httpd
+   ```   
+**3.Run nginx**  
+   ```
+   docker container run -d --name proxy -p 80:80 nginx
+   ```
+我們可以透過docker ps查看目前運行中的containers有哪些  
+![alt text](image.png)  
+我們成功建立3個Containers，  
+可以在cmd輸入curl localhost / curl localhost:8080 驗證是否成功連結  
+![alt text](image-1.png)
 
 ## Container Images，如何查看以及建立  
 
