@@ -93,7 +93,22 @@ detach可以告訴Docker在後台運行它
 **常用的container指令**  
 - **dokcer container ls**  
   list running containers.  
-- 
+- **docker container stop (container ID)**  
+  stops the container process but doesn't remove it.  
+
+**run vs. start**  
+docker container run & docker container start的差別    
+在於run是啟用"新的"container而start是啟用"已經存在的"但目前被stopped的container  
+
+- **docker container ls -a**
+  list all containers(including stopped)  
+
+- **docker container logs (container name)**  
+  show logs for a specific container.  
+
+- **docker container rm (ID)**
+  remove(delete) one of more containers.  (註: -f可以強制刪除正在運行的containers)  
+  
 
 ## Container Images，如何查看以及建立  
 
