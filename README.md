@@ -1,5 +1,5 @@
 # Docker Tutorial
-![image](img\Docker-Logo_Horizontel_279x131.b8a5c41e56b77706656d61080f6a0217a3ba356d.png)
+![image](img/Docker-Logo_Horizontel_279x131.b8a5c41e56b77706656d61080f6a0217a3ba356d.png)
 
 **記錄我在Udemy上所學，  
 由講師Bret Fisher所教授Docker Mastery: with Kubernetes +Swarm**
@@ -21,10 +21,10 @@ Docker 是一種開源軟體平台，它的構想理念是「Build and Ship any 
 
 ##  Try it!! 
 如果覺得直接安裝有點不知所措Docker是在幹嘛的話，歡迎先試玩看看  
-[Play with Docker](img\image-1.png)  
+[Play with Docker](https://labs.play-with-docker.com/)  
 這是一個線上平台，允許用戶在網頁瀏覽器中運行 Docker 容器。  
 它提供了一個沙盒環境，用戶可以在這裡實驗 Docker 命令、部署容器，並學習 Docker，而不需要在本地安裝任何軟件。你會獲得一個臨時的免費環境，能夠實時練習和學習 Docker。這個平台對於開發者、DevOps 工程師和學生來說特別有用，讓他們可以探索 Docker 的各種功能。  
-![alt text](image-2.png)  
+![alt text](img/image-1.png)  
 
 ## 安裝教學(Windows環境下)
 在Windows環境下要使用Docker首先要先下載兩個東西  
@@ -32,7 +32,7 @@ Docker 是一種開源軟體平台，它的構想理念是「Build and Ship any 
    選擇Download for Windows  
    DD is free for learning !  
    DD裡面包含很多工具，主要工具像是: Engine / CLI / Compose / BUildKits / Kubernetes & more  
-   ![alt text](image-3.png)
+   ![alt text](img/image-3.png)
 2. [WSL2](https://learn.microsoft.com/zh-tw/windows/wsl/install)  
    詳見連結如何安裝(Ubuntu版本請自行下載下來)  
    (建議可以將wsl設定在其他槽，避免c槽容量不足的問題發生。 [參考方法](https://hackmd.io/@Kuihao/wsl))      
@@ -44,13 +44,13 @@ docker version
 ```  
 docker version回傳的內容表示安裝在你系統上的 Docker 客戶端和伺服器（Docker 引擎）的詳細版本資訊     
 出現以下資訊代表成功 (目的是確保客戶端可以跟Engine對話)  
-![alt text](image.png)  
+![alt text](img/image.png)  
 
 ```
 docker info
 ```
 輸入docker info，除了顯示版本資訊以外，還可以知道目前正在運作的項目數  
-![alt text](image-4.png)
+![alt text](img/image-4.png)
 
 ## 建立/使用Containers  
 **Container(容器)是什麼?**  
@@ -82,7 +82,7 @@ docker container run -p 80:80 nginx
 - **Opened port 80 on the host IP**  
 - **Routes that traffic to the container IP, port 80**  
 執行後到打開瀏覽器在網址端輸入 : localhost 若有跑出以下畫面代表成功  
-![alt text](image-5.png)  
+![alt text](img/image-5.png)  
 在cmd輸入ctrl+c便可以中斷連接  
 
 ```
@@ -91,7 +91,7 @@ docker container run -p 80:80 -d nginx
 和前面不同的是，這裡多加了-d(--detach的簡寫)  
 detach可以告訴Docker在後台運行它  
 然後我們可以得到唯一的Container ID(注意:每次運行新的Container時，都會得到一個新的獨一ID)    
-![alt text](image-6.png)
+![alt text](img/image-6.png)
 
 **常用的container指令**  
 - **dokcer container ls**  
