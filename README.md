@@ -8,6 +8,9 @@
 **[Try it!](#try-it)**  
 **[安裝教學(Windows環境下)](#安裝教學windows環境下)**  
 **[建立/使用Containers](#建立使用containers)**  
+
+- **[Assignmet 1](#assignment-manage-multiple-containers)**  
+
 **[Container Images，如何查看以及建立](#container-images如何查看以及建立)**  
 **[Volumes](#volumes)**  
 **[Docker Compose (Build/Use Compose File)](#docker-compose-builduse-compose-file)**  
@@ -93,6 +96,8 @@ detach可以告訴Docker在後台運行它
 **常用的container指令**  
 - **dokcer container ls**  
   list running containers.  
+- **docker top (container name)**  
+  list running processes in specific container.  
 - **docker container stop (container ID)**  
   stops the container process but doesn't remove it.  
 
@@ -118,7 +123,7 @@ docker container run & docker container start的差別
 6. Opens up port 80 on host and forwards to port 80 in container  
 7. Starts container by using the CMD in the image Dockerfile  
 
-
+### Assignment: Manage Multiple Containers  
 
 ## Container Images，如何查看以及建立  
 
