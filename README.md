@@ -146,10 +146,10 @@ docker container run & docker container start的差別
    docker container run -d --name proxy -p 80:80 nginx
    ```
 我們可以透過docker ps查看目前運行中的containers有哪些  
-![alt text](image-7.png)  
+![alt text](img/image-7.png)  
 我們成功建立3個Containers，  
 可以在cmd輸入curl localhost / curl localhost:8080 驗證是否成功連結  
-![alt text](image-8.png)
+![alt text](img/image-8.png)
 
 ## Container Images，如何查看以及建立  
 
