@@ -11,6 +11,8 @@
 
 - **[Assignmet 1](#assignment-manage-multiple-containers)**  
 
+**[Getting a Shell Inside Containers](#getting-a-shell-inside-containers)**
+
 **[Container Images，如何查看以及建立](#container-images如何查看以及建立)**  
 **[Volumes](#volumes)**  
 **[Docker Compose (Build/Use Compose File)](#docker-compose-builduse-compose-file)**  
@@ -150,6 +152,16 @@ docker container run & docker container start的差別
 我們成功建立3個Containers，  
 可以在cmd輸入curl localhost / curl localhost:8080 驗證是否成功連結  
 ![alt text](img/image-8.png)
+
+## Getting a Shell Inside Containers
+```
+docker container run -it
+```
+**start new container interactively**   
+```
+docker container exec -it
+```
+**run additional command in existing container**  
 
 ## Container Images，如何查看以及建立  
 
